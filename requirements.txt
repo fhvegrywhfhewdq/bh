@@ -1,5 +1,6 @@
 aiofiles
 aiohttp
+userbot.Config
 apscheduler
 cairosvg
 cloudscraper
