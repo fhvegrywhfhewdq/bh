@@ -1,10 +1,5 @@
-
-from telethon import events
-
 import asyncio
 
-from userbot.utils import admin_cmd
-from platform import uname
 from userbot import ALIVE_NAME
 from userbot.utils import admin_cmd
 
@@ -12,7 +7,6 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "cat"
 
 
 @borg.on(admin_cmd(pattern=r"polizia"))
-
 async def _(event):
 
     if event.fwd_from:
@@ -26,21 +20,19 @@ async def _(event):
     await event.edit("Police")
 
     animation_chars = [
-        
-            "🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵",
-            "🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴",
-            "🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵",
-            "🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴",
-            "🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵",
-            "🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴",
-            "🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵",
-            "🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴",
-            "🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵",
-            "🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴",
-            "🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵",
-            f"@appenderti **Ecco la Polizia**"
-
- ]
+        "🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵",
+        "🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴",
+        "🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵",
+        "🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴",
+        "🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵",
+        "🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴",
+        "🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵",
+        "🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴",
+        "🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵",
+        "🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴\n🔵🔵🔵🔴🔴🔴",
+        "🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵\n🔴🔴🔴🔵🔵🔵",
+        f"@appenderti **Ecco la Polizia**",
+    ]
 
     for i in animation_ttl:
 
